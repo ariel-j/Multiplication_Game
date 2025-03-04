@@ -1,0 +1,253 @@
+/* Game Styles */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #dbeafe; /* Light blue background */
+  }
+  
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-header {
+    background-color: #3b82f6; /* Blue header */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app-footer {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+  
+  .app-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .app-subtitle {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .game-container {
+    max-width: 28rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+  }
+  
+  .level-info {
+    margin-bottom: 1.5rem;
+  }
+  
+  .level-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .level-stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .score-display {
+    font-size: 1.125rem;
+  }
+  
+  .score-value {
+    font-weight: bold;
+  }
+  
+  .streak-display {
+    font-size: 1.125rem;
+  }
+  
+  .streak-value {
+    font-weight: bold;
+    color: #f97316; /* Orange color for streak */
+  }
+  
+  .progress-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .progress-bar-bg {
+    width: 100%;
+    background-color: #e5e7eb; /* Gray background */
+    height: 0.75rem;
+    border-radius: 9999px;
+  }
+  
+  .progress-bar-fill {
+    background-color: #3b82f6; /* Blue fill */
+    height: 0.75rem;
+    border-radius: 9999px;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-text {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 0.25rem;
+  }
+  
+  .problem-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  .problem-text {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .problem-text-correct {
+    color: #22c55e; /* Green for correct answers */
+  }
+  
+  .problem-text-incorrect {
+    color: #ef4444; /* Red for incorrect answers */
+  }
+  
+  .feedback-text {
+    font-weight: bold;
+  }
+  
+  .feedback-correct {
+    color: #22c55e;
+  }
+  
+  .feedback-incorrect {
+    color: #ef4444;
+  }
+  
+  .answer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .answer-input {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border: 2px solid #93c5fd; /* Light blue border */
+    border-radius: 0.5rem;
+    width: 6rem;
+    text-align: center;
+  }
+  
+  .check-button {
+    margin-left: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .check-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .check-button:disabled {
+    background-color: #bfdbfe;
+    cursor: not-allowed;
+  }
+  
+  .level-complete-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .level-complete-modal {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    max-width: 24rem;
+    margin: 0 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .level-complete-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .level-complete-message {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .level-complete-score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .next-level-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .next-level-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .restart-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .restart-button:hover {
+    background-color: #16a34a;
+  }

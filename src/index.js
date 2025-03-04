@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// Change the import to match your actual filename
 import App from './app.js';
-import './index.css';
+// Remove the import for Index.css since we're now using styles.css directly in the app
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
