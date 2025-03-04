@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/multiplication-game/static/css/main.f64f02e8.css",
-    "main.js": "/multiplication-game/static/js/main.497427bc.js",
-    "index.html": "/multiplication-game/index.html",
-    "main.f64f02e8.css.map": "/multiplication-game/static/css/main.f64f02e8.css.map",
-    "main.497427bc.js.map": "/multiplication-game/static/js/main.497427bc.js.map"
+    "main.css": "/Multiplication_Game/static/css/main.f64f02e8.css",
+    "main.js": "/Multiplication_Game/static/js/main.497427bc.js",
+    "index.html": "/Multiplication_Game/index.html",
+    "main.f64f02e8.css.map": "/Multiplication_Game/static/css/main.f64f02e8.css.map",
+    "main.497427bc.js.map": "/Multiplication_Game/static/js/main.497427bc.js.map"
   },
   "entrypoints": [
     "static/css/main.f64f02e8.css",
