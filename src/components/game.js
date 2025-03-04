@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import LevelInfo from './LevelInfo';
-import ProgressBar from './ProgressBar';
-import ProblemDisplay from './ProblemDisplay';
-import AnswerInput from './AnswerInput';
-import LevelComplete from './LevelComplete';
+import LevelInfo from './levelInfo';
+import ProgressBar from './progressBar';
+import ProblemDisplay from './problemDisplay';
+import AnswerInput from './answerInput';
+import LevelComplete from './levelComplete';
 import levelConfig from '../utils/levelConfig';
 import { generateProblemsForLevel } from '../utils/problemGenerator';
 

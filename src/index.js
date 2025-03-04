@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-
-// For Tailwind CSS
-import './index.css';
+import App from './app.js';
+// Remove the import for Index.css since we're now using styles.css directly in the app
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
